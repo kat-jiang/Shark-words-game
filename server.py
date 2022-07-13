@@ -7,16 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def homepage():
-    return render_template("index.html")
-
-
-@app.route("/demo")
-def demo():
-    return render_template("demo.html")
-
-
-@app.route("/sharkwords")
-def sharkwords():
+    "Homepage for sharkwords game."
     return render_template("sharkwords.html")
 
 
